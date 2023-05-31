@@ -93,7 +93,7 @@ const navItems = [
 ];
 
 const Sidebar = ({
-  // user,
+   user,
   drawerWidth,
   isSidebarOpen,
   setIsSidebarOpen,
@@ -107,6 +107,13 @@ const Sidebar = ({
   useEffect(() => {
     setActive(pathname.substring(1));
   }, [pathname]);
+
+
+  const getUser = user.map((i) => ( console.log(i)));
+
+
+
+  console.log(getUser.occupation);
 
   return (
     <Box component="nav">
@@ -211,13 +218,13 @@ const Sidebar = ({
                   fontSize="0.9rem"
                   sx={{ color: theme.palette.secondary[100] }}
                 >
-                  {/* {user.name} */}
+                  {getUser.name}
                 </Typography>
                 <Typography
                   fontSize="0.8rem"
                   sx={{ color: theme.palette.secondary[200] }}
                 >
-                  {/* {user.occupation} */}
+                  {getUser.occupation}
                 </Typography>
               </Box>
               <SettingsOutlined

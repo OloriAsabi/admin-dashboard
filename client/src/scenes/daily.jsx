@@ -15,8 +15,7 @@ import {
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useGetDashboardQuery } from "state/api";
-import { BreakdownChart, OverviewChart, StatBox, FlexBetween, Header } from "components";
-// import { dataOverallStat } from "data";
+import { BreakdownChart, FlexBetween, Header, OverviewChart, StatBox } from "components";
 
 const Dashboard = () => {
   const theme = useTheme();
